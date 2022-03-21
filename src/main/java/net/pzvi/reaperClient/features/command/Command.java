@@ -1,0 +1,30 @@
+package net.pzvi.reaperClient.features.command;
+
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import net.minecraft.command.CommandSource;
+
+public abstract class Command {
+    String name;
+    String description;
+    String[] aliases;
+    public Command(String name, String description, String ...aliases) {
+        this.name = name;
+        this.description = description;
+        this.aliases = aliases;
+    }
+
+
+    public abstract void execute(String[] args);
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String[] getAliases() {
+        return aliases;
+    }
+}

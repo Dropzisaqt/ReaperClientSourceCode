@@ -1,0 +1,31 @@
+{
+  "required": true,
+  "package": "net.pzvi.reaperClient.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ClientPlayerEntityMixin",
+    "EntityRendererMixinn",
+    "GameRendererMixin",
+    "InGameHudMixin",
+    "MixinWorldRenderer",
+    "ScreenMixin"
+  ],
+  "client": [
+    "CameraMixin",
+    "ClientConnectionMixin",
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "EntityMixin",
+    "EntityRendererMixin",
+    "GameOptionsMixin",
+    "InGameHudMixin",
+    "LivingEntityMixin",
+    "MinecraftClientMixin",
+    "PlayerEntityMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
